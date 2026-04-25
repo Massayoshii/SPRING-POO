@@ -9,6 +9,7 @@ public class TrechoRodovia {
       this.setQuilometroInicial(quilometroInicial);
       this.setQuilometroFinal(quilometroFinal);
       this.setNivelVegetacaoCm(nivelVegetacaoCm);
+      System.out.println("Trecho rodovia: Quilometro inicial :"+this.quilometroInicial + "km | Quilometro final:"+ this.quilometroFinal + "km | Nivel de vegetacao:"+nivelVegetacaoCm + "cm");
     }
 
     public double getQuilometroInicial() {
@@ -32,7 +33,7 @@ public class TrechoRodovia {
     }
 
     public void setQuilometroFinal(double quilometroFinal) {
-        if(quilometroFinal >= 0){
+        if(quilometroFinal >= 0 && quilometroFinal > quilometroInicial){
             this.quilometroFinal = quilometroFinal;
         }else {
             System.out.println("Valor para quilometroFinal invalido");
