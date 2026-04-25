@@ -1,48 +1,53 @@
 package model;
 
 public class TrechoRodovia {
-    private double quilometroInicialCentimetros;
-    private double quilometroFinalCentimetros;
-    private double nivelVegetacaoCentimetros;
+    private double quilometroInicial;
+    private double quilometroFinal;
+    private double nivelVegetacaoCm;
 
-
-
-
-    public double getQuilometroInicialCentimetros() {
-        return quilometroInicialCentimetros;
+    public TrechoRodovia(double quilometroInicial, double quilometroFinal, double nivelVegetacaoCm) {
+      this.setQuilometroInicial(quilometroInicial);
+      this.setQuilometroFinal(quilometroFinal);
+      this.setNivelVegetacaoCm(nivelVegetacaoCm);
     }
 
-    public double getQuilometroFinalCentimetros() {
-        return quilometroFinalCentimetros;
+    public double getQuilometroInicial() {
+        return quilometroInicial;
     }
 
-    public double getNivelVegetacaoCentimetros() {
-        return nivelVegetacaoCentimetros;
+    public double getQuilometroFinal() {
+        return quilometroFinal;
     }
 
-    public void setQuilometroInicialCentimetros(double quilometroInicialCentimetros) {
-        if(quilometroInicialCentimetros >= 0){
-            this.quilometroInicialCentimetros = quilometroInicialCentimetros;
+    public double getNivelVegetacaoCm() {
+        return nivelVegetacaoCm;
+    }
+
+    public void setQuilometroInicial(double quilometroInicial) {
+        if(quilometroInicial >= 0){
+            this.quilometroInicial = quilometroInicial;
         }else {
-            System.out.println("Valor para quilometroInicialCentimetros invalido");
+            System.out.println("Valor para quilometroInicial invalido");
         }
     }
 
-    public void setQuilometroFinalCentimetros(double quilometroFinalCentimetros) {
-        if(quilometroFinalCentimetros >= 0){
-            this.quilometroFinalCentimetros = quilometroFinalCentimetros;
+    public void setQuilometroFinal(double quilometroFinal) {
+        if(quilometroFinal >= 0){
+            this.quilometroFinal = quilometroFinal;
         }else {
-            System.out.println("Valor para quilometroFinalCentimetros invalido");
+            System.out.println("Valor para quilometroFinal invalido");
         }
     }
 
-    public void setNivelVegetacaoCentimetros(double nivelVegetacaoCentimetros) {
-        if(nivelVegetacaoCentimetros >= 0){
-            this.nivelVegetacaoCentimetros = nivelVegetacaoCentimetros;
+    public void setNivelVegetacaoCm(double nivelVegetacaoCm) {
+        if(nivelVegetacaoCm >= 0){
+            this.nivelVegetacaoCm = nivelVegetacaoCm;
         }else {
-            System.out.println("Valor para nivelVegetacaoCentimetros invalido");
+            System.out.println("Valor para nivelVegetacaoCm invalido");
         }
     }
+
+
 
 
 }
