@@ -59,7 +59,9 @@ public class TrechoRodovia {
         }
     }
 
-
-
-
+    @Override
+    public String toString() {
+        return "Trecho KM " + quilometroInicial + " ao " + quilometroFinal +
+                " | Vegetação: " + nivelVegetacaoCm + " cm";
+    }
 }
